@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/star_sky"
+    tools:context=".MainActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/sun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sun"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/mercury"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mercury"
+        app:layout_constraintCircle="@+id/sun"
+        app:layout_constraintCircleAngle="0"
+        app:layout_constraintCircleRadius="50dp" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/venus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/venus"
+        app:layout_constraintCircle="@+id/sun"
+        app:layout_constraintCircleAngle="30"
+        app:layout_constraintCircleRadius="60dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/earth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/earth"
+        app:layout_constraintCircle="@+id/sun"
+        app:layout_constraintCircleAngle="60"
+        app:layout_constraintCircleRadius="90dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/mars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mars"
+        app:layout_constraintCircle="@+id/sun"
+        app:layout_constraintCircleAngle="80"
+        app:layout_constraintCircleRadius="120dp" />
+
+
+</android.support.constraint.ConstraintLayout>
